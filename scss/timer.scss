@@ -1,0 +1,81 @@
+.timer {
+  &__custom-form {
+    input {
+      height: 80px;
+      width: 100%;
+      border: none;
+      padding: 0 0 0 20px;
+      background: transparent;
+      color: #fff;
+      &::placeholder {
+        color: transparentize(#fff, .3);
+      }
+      @media screen and (min-width: 1024px) {
+        min-width: 240px;
+      }
+    }
+  }
+  &__input {
+    flex-grow: 1;
+  }
+  &__controls {
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom right, #1565C0, #2196F3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    @media screen and (min-width: 1024px) {
+      flex-wrap: nowrap;
+    }
+  }
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  &__button {
+    flex: 0 50%;
+    height: 80px;
+    background: transparent;
+    border: none;
+    border-right: 1px solid rgba(33, 150, 243, 0.45);
+    border-bottom: 1px solid rgba(33, 150, 243, 0.45);
+    color: #fff;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+    @media screen and (min-width: 620px) {
+      flex: 0 calc(100% / 3);
+    }
+    @media screen and (min-width: 1024px) {
+      flex: 1;
+    }
+
+  }
+  .display {
+    min-height: calc(100vh - 320px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    @media screen and (min-width: 620px) {
+      min-height: calc(100vh - 240px);
+    }
+    @media screen and (min-width: 1024px) {
+      min-height: calc(100vh - 80px);
+    }
+    &__time-left {
+      font-size: 4rem;
+      @media screen and (min-width: 1024px) {
+        font-size: 6rem;
+      }
+    }
+    &__end-time {
+      font-size: 1.2rem;
+      @media screen and (min-width: 1024px) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

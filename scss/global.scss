@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background: linear-gradient(to right top, #009688, #2196F3);
+  font-family: 'Nova Mono', monospace;
+  user-select: none;
+}
